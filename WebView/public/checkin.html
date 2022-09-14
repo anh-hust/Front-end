@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkin</title>
+
+    <link rel="icon" href="resource/img/gps1.svg" type="image/x-icon">
+
+    <!-- P5.js using CDN -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.2/p5.min.js"
+        integrity="sha512-rCZdHNB0AePry6kAnKAVFMRfWPmUXSo+/vlGtrOUvhsxD0Punm/xWbEh+8vppPIOzKB9xnk42yCRZ5MD/jvvjQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+    <link rel="stylesheet" href="resource/css/checkin.css">
+
+    <!-- Leaflet Local lib -->
+    <link rel="stylesheet" href="Leaflet/leaflet.css">
+    <script type="text/javascript" src="Leaflet/leaflet.js"></script>
+
+    <!-- P5.js lib -->
+    <script type="text/javascript" src="p5.min.js"></script>
+</head>
+
+<body>
+    <!-- switch context html -->
+    <div><a href="/">ISS location</a> | <a href="checkin.html">Checkin</a> | <a href="weather.html">Weather</a></div>
+
+    <h1>Location through your IP</h1>
+    <p>Lattitude: <span id="lat"></span>&deg;<br />
+        Longitude: <span id="lon"></span>&deg;</p>
+
+    <!-- Input and submit button -->
+    <input id="mood" value="How your mood ?" />
+
+    <button id="submit">Submit</button>
+
+    <div id="Video"></div>
+    <div id="Map"></div>
+
+    <script type=" text/javascript" src="resource/js/checkin.js"></script>
+</body>
+
+</html>

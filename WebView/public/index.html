@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ISS Tracking</title>
+
+  <!-- set icon for title -->
+  <link rel="icon" href="/resource/img/sat3.svg" type="image/x-icon">
+
+
+  <!-- Leaflet using CDN (Content Delivery Network)  -->
+  <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin="" /> -->
+  <!-- Make sure you put this AFTER Leaflet's CSS -->
+  <!-- <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script> -->
+
+  <link rel="stylesheet" href="resource/css/issTrack.css">
+
+  <!-- Leaflet Local lib -->
+  <link rel="stylesheet" href="Leaflet/leaflet.css">
+  <script type="text/javascript" src="Leaflet/leaflet.js"></script>
+
+</head>
+
+<body>
+  <!-- switch context html -->
+  <div><a href="/">ISS location</a> | <a href="checkin.html">Checkin</a> | <a href="weather.html">Weather</a>
+  </div>
+  <h1>Where the fuck is ISS from USA</h1>
+  <p>Lattitude: <span id="lat"></span>&deg;<br />
+    Longitude: <span id="lon"></span>&deg;</p>
+
+  <div id="issMap"></div>
+
+  <script type=" text/javascript" src="resource/js/issTrack.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+ #Map {
+    height: 50%;
+    width: 50%;
+    /* margin-left: 5%; */
+    margin-right: 3%; 
+    float: right;
+  }
+
+  #Video {
+    height: 40%;
+    width: 40%;
+    margin-left: 3%;
+    float:left;
+  }
+  
+  /* 
+   * Optional: Makes the sample page fill the window. 
+   */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
